@@ -13,3 +13,26 @@
 Абсолютные новички;45;82%;-15400
 Знакомы с теорией;30;65%;-6200
 Имеют опыт спота;15;40%;-1100
+
+date,provider,location,item_name,category,quantity,unit,total_value,unit_value,currency,note,data_source
+2026-10-01,Иркутскэнергосбыт,Иркутск,Электроэнергия (Городской тариф),mining_expenses_research,1000,кВт*ч,1420.0,1.42,RUB,Входные данные для экономики майнинга (базовый),official_site
+2026-10-01,Иркутскэнергосбыт,Иркутск,Электроэнергия (Коммерческий тариф),mining_expenses_research,1000,кВт*ч,4500.0,4.5,RUB,Входные данные для экономики (коммерция),official_site
+2026-10-02,DNS,Иркутск,Видеокарта RTX 4090 24GB,mining_hardware_research,1,шт,215000.0,215000.0,RUB,Анализ стоимости оборудования для GPU-майнинга,store_catalog
+2026-10-02,Avito,Иркутск,ASIC Antminer S19 Pro 110Th,mining_hardware_research,1,шт,125000.0,125000.0,RUB,Анализ стоимости оборудования для BTC-майнинга,marketplace
+2026-10-03,Bybit API,Global,BTC/USDT,market_baseline,1,BTC,64230.5,64230.5,USDT,Сбор стартовых котировок для инициализации БД,api_snapshot
+2026-10-03,Bybit API,Global,ETH/USDT,market_baseline,1,ETH,3450.2,3450.2,USDT,Сбор стартовых котировок для инициализации БД,api_snapshot
+2026-10-03,Bybit API,Global,TON/USDT,market_baseline,1,TON,7.15,7.15,USDT,Сбор стартовых котировок для инициализации БД,api_snapshot
+2026-10-03,Binance API,Global,SOL/USDT,market_baseline,1,SOL,145.8,145.8,USDT,"Сравнение котировок, выбор стартовой цены",api_snapshot
+2026-10-04,RuVDS,Москва (ЦОД),"VPS Ubuntu 4 Core, 8GB RAM",infrastructure_costs,1,мес,1200.0,1200.0,RUB,Смета на хостинг для Matching Engine и Flask,hosting_provider
+2026-10-04,Reg.ru,Global,Доменное имя cryptosim.ru,infrastructure_costs,1,год,199.0,199.0,RUB,Смета на регистрацию адреса платформы,registrar
+2026-10-05,TradingView,Global,Lightweight Charts,software_components,1,шт,0.0,0.0,USD,Open-source библиотека для фронтенда,github_repo
+
+
+date,provider,location,item_name,category,quantity,unit,total_value,unit_value,currency,note,data_source
+2026-09-15,Binance Research,Global,"Доля новичков, сливших первый депозит (до 30 дней)",user_statistics,85,%,85.0,85.0,N/A,Главный аргумент актуальности: 85% теряют деньги без песочницы,official_report
+2026-09-15,Bybit Analytics,Global,Среднее время до ликвидации при плече >50x,risk_analysis,14,дней,14.0,14.0,N/A,Аргумент: Быстрый крах без понимания маржинальной торговли,platform_stats
+2026-09-16,CoinGecko,Global,Целевая аудитория: трейдеры с опытом менее 1 года,audience_research,12000000,чел,12000000.0,1.0,N/A,Оценка потенциальной базы пользователей (TAM) для симулятора,market_overview
+2026-09-18,Опрос студентов (ИРНИТУ),Иркутск,"Желают торговать, но боятся потерять реальные деньги",customer_development,350,чел,350.0,1.0,N/A,Обоснование локальной актуальности в университете,google_forms
+2026-09-20,Glassnode,Global,Средний размер первого депозита новичка,financial_metrics,1,депозит,350.0,350.0,USDT,Оценка цены ошибки: столько люди теряют без обучения,onchain_data
+2026-09-22,Kaggle (Crypto Trades),Global,Доля сделок новичков без использования Stop-Loss,behavior_analysis,72,%,72.0,72.0,N/A,Аргумент: Необходимость принудительного обучения риск-менеджменту,open_dataset
+2026-09-25,Московская Биржа (MOEX),РФ,Конверсия с демо-счета на реальный,conversion_metrics,25,%,25.0,25.0,N/A,Бизнес-модель: сколько игроков симулятора потом пойдут на биржу,press_release
